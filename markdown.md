@@ -5,7 +5,7 @@
 *  Thường được dùng để tạo các tập tin readme, viết tin nhắn trên các diễn đàn, và tạo văn bản có định dạng bằng một trình biên tập văn bản thô.
 ### Lịch sử phát triển và các thông tin kèm theo.
 * Năm 2004, cùng với sự giúp đỡ của Aaron Swartz, John Gruber đã tạo ra ngôn ngữ Markdown với mục tiêu tạo ra một định dạng văn bản thô "dễ viết, dễ đọc, dễ dàng chuyển thành XHTML (hoặc HTML).
-* Thông tin kèm theo: 
+* Thông tin kèm theo:
     * **`Phần mở rộng tên file:`** .md,.markdown
     * **`Uniform Type Identifier:`** net.daringfireball.markdown
     * **`Phát triển bởi:`** John Gruber
@@ -16,25 +16,25 @@
 * Markdown dùng các dấu hiệu từ các quy ước cho văn bản thô trong email, như setext - một ngôn ngữ được thiết kế để có thể đọc bình thường mà không phải lục lọi giữa các thẻ định dạng, khác với văn bản trong ngôn ngữ đánh dấu như RTF hay HTML, vốn chứa nhiều thẻ và cú pháp khó đọc. Gruber đã viết một công cụ nhỏ bằng Perl, Markdown.pl, cho phép chuyển đổi đoạn văn bản đã đánh dấu theo chuẩn Markdown sang XHTML hoặc HTML. Tiện ích này có thể dùng một mình, hoặc dùng như là plugin cho Bloxom hoặc Movable Type, hoặc là một bộ lọc cho BBEdit.
 * Markdown sau đó đã được hoàn thiện thành một module Perl và công bố trên CPAN (Text::Markdown) cũng như trên một vài ngôn ngữ khác. Nó được phân phối theo giấy phép BSD và được nhúng sẵn, hoặc là plugin của một số hệ thống quản lý nội dung. Một số trang web như GitHub, reddit, Diaspora, Stack Exchange, OpenStreetMap, SourceForge cũng sử dụng các biến thể của Markdown trong hệ thống của mình.
 ### Cách viết và các công cụ hỗ trợ.
-* Công cụ hỗ trợ biên dịch: 
+* Công cụ hỗ trợ biên dịch:
     * Hiện tại chúng ta có thể sử dụng một số trình biên dịch code hoặc văn bản cơ bản để soạn thảo và biên dịch một file markdown.
-        + Vd: VS-Code, Sublime text, Notepad,... 
+        + Vd: VS-Code, Sublime text, Notepad,...
     * Ngoài các ứng dụng trên thì chúng ta còn các ứng dụng như MarkdownPad, Draftin.com, Dillinger.io, StackEdit.io,...
     * Đối với các trình biên dịch cơ bản thì một số ứng dụng có hỗ trợ preview markdown. Còn trong trường hợp trình biên dịch không hỗ trợ thì ta có thể sử dụng extension của Google Chrome là Markdown viewer.
-* Cách viết: 
+* Cách viết:
     * Đối với cách viết của Markdown thì chúng ta có một số quy tắc dưới đây:
         1. Thứ nhất: Các lớp tiêu đề h1,h2,h3 cho đến h6 có thể viết được bằng cách thêm số lượng ký tự `#` tương ứng vào đầu dòng. Một ký tự `#` tương đương với h1, 2 ký tự `#` tương đương với h2 ... Tuy vậy để viết một bài viết dễ đọc thì hiếm khi cần dùng đến quá 3 ký tự này.
             > Ví dụ: ![image](./imageMarkdown/header.png)
-        2. Thứ hai: 
+        2. Thứ hai:
             + Kẹp một từ ở đầu và cuối bằng 1 ký tự `*` để in nghiêng, 2 ký tự `**` để bôi đậm, và 3 ký tự `***` để vừa in nghiêng vừa bôi đậm. Nếu muốn chúng ta có thể dùng gạch dưới `_` thay cho dấu sao `*`.
-                > Ví dụ: 
+                > Ví dụ:
                 ![image](./imageMarkdown/bold.png)
                 >
             + Ngoài ra chữ có thể gạch ngang bằng 2 dấu ~~.
                 > Ví dụ:
                 ![image](./imageMarkdown/gachngang.png)
                 >
-        3. Thứ ba: 
+        3. Thứ ba:
             + Viết link trong markdown bằng cách cho alt text vào trong ngoặc vuông `[]` và link thật vào trong ngoặc đơn `()`.
                 > Ví dụ:
                 ![image](./imageMarkdown/link.png)
@@ -48,9 +48,9 @@
             ![image](./imageMarkdown/image.png)
             >
         5. Thứ năm: Để định đạng một đoạn văn bản thành các gạch đầu dòng trong markdown, chúng ta dùng ký tự `*` và một dấu cách ở mỗi ý và dùng thêm 2 dấu cách ở đằng trước nếu muốn lùi vào một level. Nếu muốn dùng số để đánh dấu thì chúng ta viết số và một dấu chấm .
-            > Ví dụ: 
+            > Ví dụ:
             ![image](./imageMarkdown/list.png)
-            Danh sách với số: 
+            Danh sách với số:
             ![image](./imageMarkdown/listWithNumber.png)
             >
         6. Thứ sáu: Cách viết một trích dẫn giống hệt khi chúng ta vẫn trả lời bình luận hay dẫn chứng trong các diễn đàn: sử dụng ký tự `>`.
@@ -81,4 +81,4 @@
             >
 ### Tài liệu tham khảo.
 1. [Hướng dẫn sử dụng mark down trên Kipalog.](https://kipalog.com/posts/Huong-dan-su-dung-Markdown-tren-Kipalog)
-2. [Hướng dẫn sử dụng markdown cơ bản.](https://viblo.asia/p/markdown-huong-dan-su-dung-Az45bQPNlxY)     
+2. [Hướng dẫn sử dụng markdown cơ bản.](https://viblo.asia/p/markdown-huong-dan-su-dung-Az45bQPNlxY)
