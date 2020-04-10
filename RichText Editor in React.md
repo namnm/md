@@ -27,7 +27,7 @@
     * Cài đặt: *npm i alloyeditor*
     * Sử dụng: https://alloyeditor.com/docs/develop/about.html
 * **Suneditor React**
-    ![image](./imageRichTextInReact/SuneditorReact.webp)
+    * ![image](./imageRichTextInReact/SuneditorReact.webp)
     * Thư viện này cung cấp dưới dạng React Component for SunEditor. Suneditor là trình soạn thảo văn bản WYSIWYG nhẹ, linh hoạt, có thể tùy chỉnh cho các ứng dụng web của bạn.
 
         + Dán từ Microsoft Word và Excel.
@@ -38,7 +38,7 @@
     *Sử dụng: ![image](./imageRichTextInReact/usageSun.png) 
         + https://www.npmjs.com/package/suneditor-react
 * **Slate** 
-    ![image](./imageRichTextInReact/slate.webp)
+    * ![image](./imageRichTextInReact/slate.webp)
     * Một khung hoàn toàn tùy biến để xây dựng các trình soạn thảo văn bản phong phú. (Hiện đang ở giai đoạn thử nghiệm.) Slate cho phép bạn xây dựng các trình soạn thảo trực quan, phong phú như các trình duyệt trong Medium, Dropbox Paper hoặc Google Docs, đang trở thành cổ phần bảng cho các ứng dụng trên web mà không cần codebase của bạn bị phức tạp. Nó có thể làm điều này bởi vì tất cả logic của nó được triển khai với một loạt các plugin, vì vậy bạn không bao giờ bị hạn chế bởi những gì là hoặc không có trong "core". Bạn có thể nghĩ về nó giống như một triển khai có thể cắm được của nội dung có thể được xây dựng dựa trên React và bất biến. Nó được lấy cảm hứng từ các thư viện như Draft.js, Prosemirror và Quill
     * Cài đặt: *npm i slate-react*
     * Sử dụng: https://github.com/ianstormtaylor/slate
