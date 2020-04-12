@@ -79,6 +79,56 @@
             > Ví dụ:
             ![image](./imageMarkdown/fastLink.png)
             >
+### Các extension và plugin của markdown.
+* Như đã nói ở trên thì markdown có thể viết trên nhiều trình biên dịch khác nhau, miễn là chúng ta viết đúng cấu trúc và khi lưu hoặc xuất ra một file với đuôi .md hoặc .markdown là chúng ta đã soạn thảo được một file markdon. Kèm với đó phiên bản mới nhất của markdown là cách đây 15 năm trước, thế nên sẽ có nhiều việc bất tiện trong việc sử dụng. Tuy nhiên nhu cầu sử dụng file markdown còn rất cao, thế nên các chương trình biên dịch code ngày nay đã cung các extension và plugin để hỗ trợ người dùng soạn thảo một file markdown hiệu quả hơn. Hoặc một số công ty cũng đã có thiết kế một số phần mềm dành riêng cho việc soạn thảo một file markdown, và tất nhiên các ứng dụng này đã tích hợp sẵn các extension và các cú pháp nâng cao trong việc biên dịch một file markdown.
+* Bây giờ chúng ta sẽ tới với các extension và plugin của một editor quen thuộc là VS-Code.
+    + Extension 1: markdownlint. Markdownlint là một extension được cung cấp bởi VS-Code, bao gồm các thư viện về các quy tắc và các tiêu chuẩn cho việc soạn thảo một file markdown. **Cách sử dụng:** bất cứ khi nào chúng ta soạn thảo hoặc chỉnh sửa một file markdown thì cứ với bất kì một dòng nào vi phạm quy tắc của markdownlint thì lập tức sẽ được bật cảnh báo trong trình chỉnh sửa. Cảnh báo được biểu thị bằng một gạch dưới màu xanh lượn sóng và cũng có thể được nhìn thấy bằng cách nhấn Ctrl + Shift + M để mở hộp thoại Lỗi và Cảnh báo.  Di con trỏ chuột lên một đường màu lục để xem cảnh báo hoặc nhấn F8 và Shift + F8 để chuyển qua tất cả các cảnh báo (tất cả các cảnh báo markdownlint đều bắt đầu bằng MD ###). Để biết thêm thông tin về cảnh báo markdownlint, đặt con trỏ trên một dòng và nhấp vào biểu tượng bóng đèn hoặc nhấn Ctrl +. để mở hộp thoại hành động mã. Nhấp vào một trong các cảnh báo trong hộp thoại sẽ hiển thị mục trợ giúp của quy tắc đó trong trình duyệt web mặc định. [Quy tắc của markdownlint(Xem ở phần Rules).](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
+    + Extension 2: Markdown TOC. Extension cung cấp cho chúng ta các tiện ích sau:
+        1. Chèn phần số cho tiêu đề.
+        2. Tự động kích hoạt plugin trên markdown.
+        3. Chèn neo cho tiêu đề.
+        4. Liên kết thông qua các thẻ neo # A 1 → # a-1.
+        5. Kiểm soát độ sâu [1-6] với độ sâuFrom: 1 và độ sâuTo: 6.
+        6. Bật hoặc tắt liên kết với withLinks: true
+        7. Làm mới danh sách lưu với updateOnSave: true.
+        8. Sử dụng danh sách theo thứ tự (1. ..., 2. ...) với orderList: true.
+        9. Hỗ trợ neo cho (github.com | nodejs.org | bitbucket.org | ghost.org | gitlab.com).
+        * [Cách sử dụng.](https://marketplace.visualstudio.com/items?itemName=AlanWalk.markdown-toc&ssr=false#qna)
+    + Extension 3: Markdown shortcuts. Với extension này thì chúng ta có thể định dạng file markdown một cách nhanh và hiệu quả nhất chỉ với vài cái click chuột. Dưới đây là một số câu lệnh mà extension cung cấp:
+        | Name                            | Description                                      | Default key binding |
+        |---------------------------------|--------------------------------------------------|---------------------|
+        | md-shortcut.showCommandPalette  | Display all commands                             | ctrl+M ctrl+M       |
+        | md-shortcut.toggleBold          | Make **bold**                                    | ctrl+B              |
+        | md-shortcut.toggleItalic        | Make _italic_                                    | ctrl+I              |
+        | md-shortcut.toggleStrikethrough | Make ~~strikethrough~~                           |                     |
+        | md-shortcut.toggleLink          | Make [a hyperlink](www.example.org)              | ctrl+L              |
+        | md-shortcut.toggleImage         | Make an image ![](image_url.png)                 | ctrl+shift+L        |
+        | md-shortcut.toggleCodeBlock     | Make ```a code block```                          | ctrl+M ctrl+C       |
+        | md-shortcut.toggleInlineCode    | Make `inline code`                               | ctrl+M ctrl+I       |
+        | md-shortcut.toggleBullets       | Make * bullet point                              | ctrl+M ctrl+B       |
+        | md-shortcut.toggleNumbers       | Make 1. numbered list                            | ctrl+M ctrl+1       |
+        | md-shortcut.toggleCheckboxes    | Make - [ ] check list (Github flavored markdown) | ctrl+M ctrl+X       |
+        | md-shortcut.toggleTitleH1       | Toggle # H1 title                                |                     |
+        | md-shortcut.toggleTitleH2       | Toggle ## H2 title                               |                     |
+        | md-shortcut.toggleTitleH3       | Toggle ### H3 title                              |                     |
+        | md-shortcut.toggleTitleH4       | Toggle #### H4 title                             |                     |
+        | md-shortcut.toggleTitleH5       | Toggle ##### H5 title                            |                     |
+        | md-shortcut.toggleTitleH6       | Toggle ###### H6 title                           |                     |
+        | md-shortcut.addTable            | Add Tabular values                               |                     |
+        | md-shortcut.addTableWithHeader  | Add Tabular values with header                   |                     |
+        ****
+    + Extension 4: Kể từ extension này trở đi sẽ là các extension hỗ trợ cho việc review. Markdown Preview Github Styling. Giúp chúng ta có một cách preview khác về markdown trên VS-Code giống với trên Github.
+        > + Ví dụ
+        ![image](./imageMarkdown/mdPreviewGithub.png) 
+        >
+    + Extension 5: Markdown Emoji. Thêm hỗ trợ cho: biểu tượng cảm xúc: cú pháp vào bản xem trước đánh dấu tích hợp sẵn của VS Code. 
+        > + Ví dụ:
+        ![image](./imageMarkdown/mdEmoji.png)
+        >
+    + Extension 6: Markdown+Math. Với extension này cho phép sử dụng Visual Studio Code làm trình chỉnh sửa đánh dấu có khả năng sắp chữ và kết xuất toán học TeX. Trong thực tế, nó sử dụng lại trình xem markdown tích hợp. KaTeX hoạt động bên trong như một trình kết xuất toán học nhanh. [Link tham khảo](https://marketplace.visualstudio.com/items?itemName=goessner.mdmath).
+        > + Ví dụ
+        ![image](./imageMarkdown/mdmath.gif)
+        >
 ### Tài liệu tham khảo.
 1. [Hướng dẫn sử dụng mark down trên Kipalog.](https://kipalog.com/posts/Huong-dan-su-dung-Markdown-tren-Kipalog)
 2. [Hướng dẫn sử dụng markdown cơ bản.](https://viblo.asia/p/markdown-huong-dan-su-dung-Az45bQPNlxY)
