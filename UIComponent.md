@@ -97,6 +97,108 @@ Mobile: react-native-progress
 Mobile: react-native-step-indicator
 Web: rc-steps
 
+## React Table
+* Cài đặt react-table: chạy lệnh npm install --save react-table
+* Cách sử dụng:
+    * Khai báo ReactTable: *import ReactTable from 'react-table*
+    * Gọi css nếu muốn table đẹp hơn: *import 'react-table/react-table.css'*
+* Ví dụ: 
+    * Để hiển thị dữ liệu
+        - const data = [{
+  name: 'Nguyen Van A',
+  age: 26,
+  friend: {
+    name: 'Do Van C',
+    age: 23,
+  }
+}, {
+  name: 'Dao Thi B',
+  age: 22,
+  friend: {
+    name: 'Ngo Trung V',
+    age: 24,
+  }
+}, {
+  name: 'Tran Duc C',
+  age: 25,
+  friend: {
+    name: 'Ngo Thanh E',
+    age: 25,
+  }
+}];
+    * Trước khi gọi component ra phải định dạng hiển thị cho các cột của bảng.
+    ![image](./imageUIComponent/codeUI1.png)
+    * Sau khi có dữ liệu định dạng hiển thị, ta có thể gọi component ra.
+    ![image](./imageUIComponent/codeUI2.png)
+    * Kết quả: 
+    ![image](./imageUIComponent/codeUI3.png)
+* Một số option lúc gọi component hiển thị bản
+    * data: [], // Dữ liệu đổ vào bảng
+    * showPagination: boolean, // Hiển thị phân trang hay không
+    * showPageSizeOptions: boolean, // Hiển thị selectbox thay đổi số bản ghi trên 1 trang hay không
+    * pageSizeOptions: [5, 10, 20, 25, 50, 100], //  Các options cho selectbox số bản ghi trên 1 trang
+    * defaultPageSize: integer, // Số bản ghi mặc định trên 1 trang
+    * resizable: boolean, // Cho phép người dùng tự do thay đổi kích thước của các cột hay không
+    * filterable: boolean, // Cho phép lọc dữ liệu hay không
+    * defaultFilterMethod: (filter, row, column) => {return true}, // Hàm lọc mặc định nếu không bị override bởi hàm filterMethod ở từng cột
+    * page: integer, // Hiển thị bảng ở trang số bao nhiêu
+
+ Một số option cho định dạng cột
+
+    * Cell: ({value}) => (value >= 18 ? 'Can watch video' : 'Cannot watch video') // Tùy biến lại component Cell, cách hiển thị của dữ liệu ở từng ô trong cột.
+    * sortable: boolean // Cho phép sắp xếp theo cột này hay không?
+    * filterable: boolean // Cho phép lọc theo cột này hay không?
+    * filterMethod: (filter, row, column) => {return true} // Hàm lọc áp dụng khi lọc theo cột này
+    * Filter: ({filter, onChange}) => (
+    * <select
+    value={filter ? filter.value : '0'}
+    onChange={event => onChange(event.target.value)}
+    >
+    <option value='0' />
+    <option value='1'>Option 1</option>
+    <option value='2'>Option 2</option>
+    * </select>
+     ) // Tùy biến component Filter, hiển thị ra select box thay vì textbox. Hàm callback onChange truyền vào giá trị là filter.value cho hàm filterMethod.
+* Tuỳ biến component TrGroupComponent
+    * Ví dụ age > 25 tô màu:
+        *  Định nghĩa component mới:
+        ![image](./imageUIComponent/codeUI4.png)
+        * Gọi component ra:: 
+        ![image](./imageUIComponent/codeUI5.png)
+        * Kết quả: 
+        ![image](./imageUIComponent/codeUI6.png)
+## React-Virtualize
+* Càng nhiều element được đưa vào trang, trình duyệt sẽ mất nhiều thời gian hơn để hiển thị nó và dẫn tới trải nghiệm người dùng sẽ càng tệ. Điều này ta dễ dàng gặp trong trường hợp xử lý hiển thị list record với số lượng lớn, giải pháp ở đây là mình chỉ hiển thị những item cần thiết và lắng nghe sự kiện scroll để load data thích hợp. Trong Reactjs ta có thể sử dụng 2 thư viện hỗ trợ là react-window hoặc react-virtualized, nếu bạn sử dựng Kendo UI’s Grid component thì tính năng này đã được tích hợp sẵn.
+* Render element mặc định
+    * const rowCount = 1000; // Số lượn record cần tạo
+    ![image](./imageUIComponent/codeUI7.png)
+    * Kết quả:
+    ![image](./imageUIComponent/codeUI8.png)
+* Render element với react-virtualize
+    * Cài đặt: *yarn add react-virtualized*
+    * Code: 
+    ![image](./imageUIComponent/codeUI9.png)
+    ![image](./imageUIComponent/codeUI10.png)
+    * Kết quả: 
+    ![image](./imageUIComponent/codeUI11.png)
+## Flatlist (React-Native)
+* Là một cách dễ dàng để tạo một list của data. Không chỉ hiệu quả mà còn có một API cực kỳ đơn giản để làm việc. Nếu bạn đã sử dụng hoặc quen thuộc với ListView component thì nó rất giống nhau, gần như tốt hơn về mọi mặt. Bạn không còn phải định dạng dữ liệu - bạn chỉ có thể truyền cho nó một array data và hiển thị lại.
+
+* Có 2 thành phần chính bạn cần biết trong FlatList là data và renderItem. Đầu tiên là một mảng dữ liệu được sử dụng để tạo danh sách, điển hình là một mảng các object và thứ hai là function sẽ lấy một phần tử riêng lẻ của mảng dữ liệu và hiển thị thành phần đó.
+Data sẽ từ Random User Genetor API và React Native Elements sẽ dùng cho giao diện.
+* Trong phần tóm tắt của hướng dẫn này, ứng dụng sẽ đưa ra yêu cầu đối với Random User Generator API và lưu trữ response từ component state đó
+
+    
+
+
+        
+
+        
+
+
+
+
+
 
 
 
