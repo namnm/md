@@ -1,6 +1,6 @@
-##Tìm hiểu về DraftJS
+## Tìm hiểu về DraftJS
 ---
-##DraftJS là gì
+## DraftJS là gì
 
 * DraftJS là một framework để xây dựng các trình soạn thảo văn bản phong phú trong React, được cung cấp bởi một mô hình bất biến và trừu tượng hóa về sự khác biệt giữa các trình duyệt.
 
@@ -8,7 +8,7 @@
 
 * Draft.js đã được giới thiệu tại React.js Conf vào tháng 2 năm 2016
 
-##Cài đặt DraftJS
+## Cài đặt DraftJS
 
 `npm install draft-js react react-dom
 # or alternately
@@ -20,7 +20,7 @@ yarn add draft-js react react-dom`
 # or
 yarn add draft-js react react-dom es6-shim`
 
-##Các API hiện có
+## Các API hiện có
 
 * Editor Component
 * EditorChangeType
@@ -36,7 +36,3 @@ yarn add draft-js react react-dom es6-shim`
 * AtomicBlockUtils
 * KeyBindingUtil
 * Modifier
-
-
-
-
