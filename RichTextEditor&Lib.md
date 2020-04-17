@@ -47,6 +47,11 @@
 	     * Hiệu suất Cross-Browser mạnh mẽ.
 	     * Hỗ trợ trên nền tảng di động.
 	   * Điểm yếu: Do hỗ trợ khá nhiều tính năng nên editor này sẽ khá nặng hơn các editor khác.
+	   * Demo: 
+	     * Code: 
+	     	![image](./imageRichTextEditor&Lib/demoCodeTinyMCE.png)
+	     * Kết quả:
+	     	![image](./imageRichTextEditor&Lib/resultTinyMCE.png)
   3. [CKEditor](https://nightly.ckeditor.com/20-04-09-06-04/full/samples/index.html):
 	   * Là một trình soạn thảo văn bản HTML sẵn sàng để sử dụng được thiết kế để đơn giản hóa việc tạo nội dung web. Nó mang các tính năng xử lý văn bản phổ biến trực tiếp đến các trang web của bạn.
            * Hướng dẫn cài đặt và sử dụng, xem [tại đây](https://o7planning.org/vi/10369/huong-dan-su-dung-trinh-soan-thao-ckeditor).
@@ -58,3 +63,8 @@
 		     * Hỗ trợ RTL.
 		     * Hỗ trợ trên nền tảng di động.
 		   * Điểm yếu: Do hỗ trợ khá nhiều tính năng nên editor này sẽ khá nặng hơn các editor khác.
+		   * Demo:
+		     * Code:
+		     	![image](./imageRichTextEditor&Lib/demoCodeCKEditor.png)
+		     * Kết quả:
+		     	![image](./imageRichTextEditor&Lib/resultCKEditor.png)
