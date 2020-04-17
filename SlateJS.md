@@ -1,12 +1,12 @@
-##Tìm hiểu về SlateJS
+## Tìm hiểu về SlateJS
 ---
-##SlateJS là gì
+## SlateJS là gì
 
 * Slate là một framework hoàn toàn tùy biến để xây dựng các trình soạn thảo văn bản phong phú.
 Slate cho phép bạn xây dựng các trình soạn thảo trực quan, phong phú như các trình soạn thảo trong Medium, Dropbox Paper hoặc Google Docs, đang trở thành cổ phần bảng cho các ứng dụng trên web mà không cần codebase của bạn bị phức tạp.
 Nó có thể làm điều này bởi vì tất cả logic của nó được triển khai với một loạt các plugin, vì vậy bạn không bao giờ bị hạn chế bởi những gì là hoặc không có trong "core". Bạn có thể nghĩ về nó giống như một triển khai có thể cắm được của nội dung có thể được xây dựng dựa trên React. Nó được lấy cảm hứng từ các thư viện như Draft.js, Prosemirror và Quill.
 
-##Tại sao phải tạo ra SlateJS
+## Tại sao phải tạo ra SlateJS
 
 * Trước khi tạo Slate, tôi đã thử rất nhiều thư viện văn bản phong phú khác ngoài đó, Draft.js, Prosemirror, Quill, v.v. Điều tôi nhận thấy là trong khi việc lấy các ví dụ đơn giản để làm việc là đủ dễ dàng, khi bạn bắt đầu thử xây dựng một cái gì đó như Medium, Dropbox Paper hoặc Google Docs, bạn gặp vấn đề sâu hơn ...
 
@@ -20,7 +20,7 @@ Nó có thể làm điều này bởi vì tất cả logic của nó được tr
 
 + Xây dựng các tài liệu phức tạp, lồng nhau là không thể. Nhiều editors được thiết kế xung quanh các tài liệu "phẳng" đơn giản, làm cho những thứ như bảng, nhúng và chú thích trở nên khó lý luận và đôi khi không thể.
 
-##Nguyên tắc vận hành
+## Nguyên tắc vận hành
 
 + First-class plugins. Phần quan trọng nhất của Slate là các plugin là các thực thể hạng nhất. Điều đó có nghĩa là bạn hoàn toàn có thể tùy chỉnh trải nghiệm chỉnh sửa, để xây dựng các trình soạn thảo phức tạp như Medium hay Dropbox, mà không phải chiến đấu chống lại các giả định của thư viện.
 
@@ -36,7 +36,7 @@ Nó có thể làm điều này bởi vì tất cả logic của nó được tr
 
 + Xóa ranh giới "core". Với kiến ​​trúc đầu tiên là plugin và lõi không có lược đồ, nó trở nên rõ ràng hơn rất nhiều khi ranh giới nằm giữa "core" và "tùy chỉnh", điều đó có nghĩa là trải nghiệm core không bị sa lầy trong các trường hợp khác.
 
-##Ví dụ
+## Ví dụ
 
 * [Plain text](https://www.slatejs.org/examples/plaintext) -  hiển thị trường hợp cơ bản nhất: một <textarea> được tạo điểm nhấn.
 
