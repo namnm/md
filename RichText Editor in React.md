@@ -7,8 +7,7 @@
 ### Những thư viện RichText Editor in React
 * **React Quill**
     * ![image](./imageRichTextInReact/Quill.webp)
-    * Quill là trình soạn thảo WYSIWYG mã nguồn mở , miễn phí được xây dựng cho web hiện đại. Với kiến trúc mở rộng và API biểu cảm, bạn hoàn toàn có thể tùy chỉnh nó để đáp ứng nhu cầu của bạn. Một số tính năng được tích hợp bao gồm:
-
+    * Quill là trình soạn thảo WYSIWYG mã nguồn mở , miễn phí được xây dựng cho web hiện đại. Với kiến trúc mở rộng và API biểu cảm, bạn hoàn toàn có thể tùy chỉnh nó để đáp ứng nhu cầu của bạn. Một số tính năng được tích hợp bao gồm:  
         + Nhanh và nhẹ
         + Đánh dấu ngữ nghĩa
         + HTML được chuẩn hóa giữa các trình duyệt
